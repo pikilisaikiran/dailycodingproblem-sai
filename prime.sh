@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 echo "enter a number:"
 read -r n
 i=2
