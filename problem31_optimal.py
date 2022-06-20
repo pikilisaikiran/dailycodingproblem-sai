@@ -13,6 +13,8 @@ def edit_distance(str1,str2,m,n,memo={}):
         return n
     if n==0:
         return m
+    if key in memo:
+        return memo[key]
     if str1[m-1]== str2[n-1]: #if last characters are same just take the count upto previous characters
         memo[key]=edit_distance(str1,str2,m-1,n-1)
         return memo[key]
