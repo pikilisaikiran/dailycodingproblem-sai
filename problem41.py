@@ -29,7 +29,7 @@ def itinerary(lst,start):
         res.append(temp)
         start=temp
         if temp=='[': # if there is no destination for any starting airport
-            res=[]      #return the empty list
+            res.clear()      #return the empty list
             return res
         temp='['        #assign temp value to greater than 'Z' again
         lst.remove(mark) # remove the marked i 
