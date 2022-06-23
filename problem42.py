@@ -19,5 +19,5 @@ def find_subset(s,k):
 #driver code
 s = [12, 1, 61, 5, 9, 2]
 k = 25
-memo={}
 print(find_subset(s,k))
+
