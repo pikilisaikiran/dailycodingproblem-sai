@@ -10,7 +10,7 @@ and sell it at 10 dollars.
 def max_pro(arr):
     max=0
     for i in range(len(arr)):
-        for j in range(i,len(arr)):
+        for j in range(i+1,len(arr)):
             d=arr[j]-arr[i]
             if d>max:
                 max=d
