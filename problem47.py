@@ -14,7 +14,6 @@ def max_pro(arr):
             d=arr[j]-arr[i]
             if d>max:
                 max=d
-                mark=arr[i]
-    return mark
+    return max
 arr=[9,11,8,5,7,10]
 print(max_pro(arr))
