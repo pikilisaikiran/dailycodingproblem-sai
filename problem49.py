@@ -10,21 +10,16 @@ Do this in O(N) time.
 """
 import sys
 def max_sum_cont_subarray(arr):
-    max1 = -sys.maxsize -1
-    max2 = -sys.maxsize -1
+    max_till_present = -sys.maxsize -1
+    max1 = 0
     sum=0
-    for i in range(len(arr)):#checking for max sum form left to right
-        sum+=arr[i]
-        if sum>max1:
-            max1=sum
-    sum=0
-    for j in range(len(arr)-1,-1,-1):#checking for max sum form right to left
-        sum+=arr[j]
-        if sum>max2:
-            max2=sum
-    if max(max1,max2)<0:# return the max of two sums
-        return 0
-    return max(max1,max2)
-arr=[34, -50, 42, 14, -5, 86]
+    for i in range(len(arr)):
+        max1=max1+arr[i]
+        if max_till_present<max1:
+            max_till_present=max1
+        if max1<0:
+            max1=0
+    return max_till_present
+arr=[34, -50, 42, 14, -5, 86,-1,-100]
 print(max_sum_cont_subarray(arr))
 
