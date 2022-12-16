@@ -7,6 +7,7 @@ import java.util.Scanner;
 The test cases are generated so that the answer will fit in a 32-bit integer.
 
 A subarray is a contiguous subsequence of the array.
+asdf
 
  
 
